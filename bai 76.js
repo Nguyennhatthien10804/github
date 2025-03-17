@@ -6,5 +6,5 @@ function Animal(name,leg,speed){
         return `${this.name} ${this.leg} ${this.speed}`
     }
 }
-var parrot = new Animal('Cat',4,60);
+var parrot = new Animal('Cat',4,5);
 console.log(parrot.inf())
