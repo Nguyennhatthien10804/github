@@ -9,12 +9,12 @@ var courses = [
         Name :  'html, css',
         coin : 0.
         },
-    {
-        id : 1,
+    {   
+        id : 3,
         Name :  'php',
         coin : 350.
         }
 ];
  courses.forEach(function(course, index){
         console.log(index, course);
- });
+ });    

@@ -1,3 +1,4 @@
+
 var courses = [
     {
         id : 1,
@@ -25,16 +26,10 @@ var courses = [
         coin : 350.
      }
 ]; 
-function courseHandler(course,index){
-    
-    return {
-        id : course.id,
-        Name : `Khoa hoc: ${course.Name}`,
-        coin : course.coin,
-        coinText : `Gia: ${course.coin}`,
-        index : index,
-    };
-}; 
-var newCourses = courses.map(courseHandler);
-    
-console.log(newCourses);
+var i= 0;
+
+var totalCoin = courses.reduce(function(total, course){
+    i++
+    return total + course.coin;
+},o);
+console.log(totalCoin);
